@@ -45,15 +45,4 @@ p {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -25px;
-    width: 150px;
-    height: 5px;
-    background-color: #559427;
-  }
 }

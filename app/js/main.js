@@ -1,5 +1,22 @@
 $(document).ready(function(){
 
+    $(window).scroll(function() {
+        var height = $(window).scrollTop();
+        
+                /*Если сделали скролл на 100px задаём новый класс для header*/
+        if(height > 100){
+        $('.header__inner').addClass('fixed');
+        } else{
+                /*Если меньше 100px удаляем класс для header*/
+        $('.header__inner').removeClass('fixed');
+        }
+        
+        });
+
+
+    
+
+
   $('.header__slider').slick({
     dots: false,
     infinite: true,
@@ -113,5 +130,10 @@ $(document).ready(function(){
   }
 })(jQuery);
 
+
+$('#pagepiling').pagepiling({
+    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage', 'lastPage'],
+    menu: '#myMenu'
+});
 
 });
