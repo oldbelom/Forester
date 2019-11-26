@@ -21,7 +21,7 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
-    "jquery-parallax.js": "^1.5.0",
-    "pagepiling.js": "^1.5.6"
+    "gumshoejs": "^5.1.2",
+    "jquery-parallax.js": "^1.5.0"
   }
 }

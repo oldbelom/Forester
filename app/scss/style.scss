@@ -2,6 +2,7 @@
 @import '../scss/vars.scss';
 @import '../scss/fonts.scss';
 
+
 // header start 
 .header {
   position: relative;
@@ -89,7 +90,8 @@
   height: 60px;
   z-index: 3;
   transition: all .5s;
-  &::after{
+
+  &::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -115,9 +117,8 @@
     text-align: center;
     border-bottom: 5px solid transparent;
 
-    &:hover .border {
+    &:hover .menu__border {
       width: 100%;
-
     }
   }
 
@@ -129,31 +130,40 @@
 
   }
 
-  .border {
+  .menu__border {
     position: absolute;
     left: 0;
     bottom: -5px;
     width: 0;
     height: 5px;
     transition: all .3s ease-in-out;
-    background-color: #559427;
+    background-color: $main-color;
   }
 }
 
-.header__inner.fixed{
-  &::after{
+#top-menu li.active {
+  .menu__border {
+    background-color: $main-color;
+    width: 100%;
+  }
+}
+
+.header__inner.fixed {
+  &::after {
     top: 0;
     transition: all .5s;
     box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.05);
   }
 
-  ul{
+  ul {
     margin-top: 0;
     z-index: 1;
   }
-  a{
+
+  a {
     color: #000;
   }
+
   .label {
     transform: rotate(0deg);
     transition: all .5s;
@@ -168,7 +178,7 @@
   margin: 0;
   font-family: 'Lobster', cursive;
   letter-spacing: 1px;
-  color: #559427;
+  color: $main-color;
   text-transform: none;
   font-size: 30px;
 }
@@ -185,6 +195,7 @@
   transform: rotate(45deg);
   transition: all .5s;
 }
+
 // header end 
 // about start
 .about {
@@ -234,7 +245,7 @@
   &-text {
     font-size: 30px;
     font-weight: 700;
-    color: #559427;
+    color: $main-color;
   }
 
   .numscroller {
@@ -330,7 +341,7 @@
   font-family: 'Open Sans', sans-serif;
 
   &:hover .services__item-rhomb {
-    background-color: #559427;
+    background-color: $main-color;
   }
 
   &:hover path {
@@ -423,7 +434,7 @@
   }
 
   .slick-active {
-    background-color: #559427;
+    background-color: $main-color;
   }
 
   button {
@@ -434,7 +445,7 @@
 // review end
 // team start
 .team {
-  padding-top: 20px;
+  padding-top: 40px;
   margin-bottom: 60px;
   overflow: hidden;
   // height: 100%;
@@ -580,7 +591,9 @@
     text-align: center;
     margin-bottom: 50px;
   }
-  a, p{
+
+  a,
+  p {
     color: #000;
     font-size: 16px;
     margin-bottom: 30px;

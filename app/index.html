@@ -18,20 +18,20 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="header__inner">
       <div class="container">
         <nav class="menu">
-          <ul>
-            <li><a href="#">Начало<span class="border"></span></a></li>
-            <li><a href="#">О нас<span class="border"></span></a></li>
-            <li><a href="#">Маршруты<span class="border"></span></a></li>
+          <ul id="top-menu">
+            <li><a href="#header">Начало<span class="menu__border"></span></a></li>
+            <li><a href="#about">О нас<span class="menu__border"></span></a></li>
+            <li><a href="#routes">Маршруты<span class="menu__border"></span></a></li>
             <li><a href="#">
                 <h2 class="menu__logo">Леcник</h2><span class="label"></span>
               </a></li>
-            <li><a href="#">Услуги<span class="border"></span></a></li>
-            <li><a href="#">Команда<span class="border"></span></a></li>
-            <li><a href="#">Контакты<span class="border"></span></a></li>
+            <li><a href="#services">Услуги<span class="menu__border"></span></a></li>
+            <li><a href="#team">Команда<span class="menu__border"></span></a></li>
+            <li><a href="#contacts">Контакты<span class="menu__border"></span></a></li>
           </ul>
         </nav>
       </div>
@@ -46,7 +46,7 @@
     </h1>
   </header>
 
-  <main class="about">
+  <main class="about" id="about">
     <div class="container">
       <h2 class="title">О нас</h2>
       <div class="about__inner">
@@ -98,68 +98,68 @@
     </div>
   </section>
 
-  <section class="routes">
+  <section class="routes" id="routes">
     <div class="routes__inner">
-      <div class="routes__item">
+      <a class="routes__item" href="#">
         <img class="routes__item-img" src="images/routes/rout1.jpg" alt="Кавказ">
         <div class="routes__item-overlay">
           <h3>Кавказ</h3>
           <span>Маршруты разной слоожности и незабываемые впечатления</span>
         </div>
-      </div>
-      <div class="routes__item">
+      </a>
+      <a class="routes__item" href="#">
         <img class="routes__item-img" src="images/routes/rout2.jpg" alt="Кавказ">
         <div class="routes__item-overlay">
           <h3>Алтай</h3>
           <span>Маршруты разной слоожности и незабываемые впечатления</span>
         </div>
-      </div>
-      <div class="routes__item">
+      </a>
+      <a class="routes__item" href="#">
         <img class="routes__item-img" src="images/routes/rout3.jpg" alt="Кавказ">
         <div class="routes__item-overlay">
           <h3>Южный Урал</h3>
           <span>Маршруты разной слоожности и незабываемые впечатления</span>
         </div>
-      </div>
-      <div class="routes__item">
+      </a>
+      <a class="routes__item" href="#">
         <img class="routes__item-img" src="images/routes/rout4.jpg" alt="Кавказ">
         <div class="routes__item-overlay">
           <h3>Карелия</h3>
           <span>Маршруты разной слоожности и незабываемые впечатления</span>
         </div>
-      </div>
-      <div class="routes__item">
+      </a>
+      <a class="routes__item" href="#">
         <img class="routes__item-img" src="images/routes/rout5.jpg" alt="Кавказ">
         <div class="routes__item-overlay">
           <h3>Северный Урал</h3>
           <span>Маршруты разной слоожности и незабываемые впечатления</span>
         </div>
-      </div>
-      <div class="routes__item">
+      </a>
+      <a class="routes__item" href="#">
         <img class="routes__item-img" src="images/routes/rout6.jpg" alt="Кавказ">
         <div class="routes__item-overlay">
           <h3>Камчатка</h3>
           <span>Маршруты разной и незабываемые впечатления</span>
         </div>
-      </div>
-      <div class="routes__item">
+      </a>
+      <a class="routes__item" href="#">
         <img class="routes__item-img" src="images/routes/rout7.jpg" alt="Кавказ">
         <div class="routes__item-overlay">
           <h3>Подмосковье</h3>
           <span>Для тех кто устал от городского шума. Проведите выходные на природе!</span>
         </div>
-      </div>
-      <div class="routes__item">
+      </a>
+      <a class="routes__item" href="#">
         <img class="routes__item-img" src="images/routes/rout8.jpg" alt="Кавказ">
         <div class="routes__item-overlay">
           <h3>Крым</h3>
           <span>Невысокие горы Крыма подойдут как для начинающих туристов, так и для опытных походников</span>
         </div>
-      </div>
+      </a>
     </div>
   </section>
 
-  <section class="services">
+  <section class="services" id="services">
     <div class="container">
       <h3 class="title">В наши услуги включены:</h3>
       <div class="services__inner">
@@ -358,7 +358,7 @@
     </div>
   </section>
 
-  <section class="team">
+  <section class="team" id="team">
     <div class="container">
       <h3 class="title">
         наша команда
@@ -424,7 +424,7 @@
     </div>
   </section>
 
-  <section class="contacts">
+  <section class="contacts" id="contacts">
     <div class="contacts__info">
       <h3>Наши контакты:</h3>
       <a href="tel:84959876543" class="contacts__tel">+7 (495) 987-65-43</a>

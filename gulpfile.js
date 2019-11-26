@@ -23,6 +23,7 @@ gulp.task('script', function(){
   return gulp.src([
     'node_modules/slick-carousel/slick/slick.js',
     'node_modules/jquery-parallax.js/parallax.min.js',
+    'node_modules/gumshoejs/dist/gumshoe.polyfills.min.js',
   ])
   .pipe(concat('libs.min.js'))
   .pipe(uglify())
