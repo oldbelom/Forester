@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+    // burger menu
+    $('.menu__btn').on('click', function(){
+        $('#menu__list').slideToggle();
+    });
+   
+
     // animation for fixed menu
     $(window).scroll(function() {
         var height = $(window).scrollTop();
@@ -17,11 +23,20 @@ $(document).ready(function(){
         speed: 1000,
         fade: true,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3500,
         pauseOnHover: false,
         prevArrow: '<button type="button" class="slick-prev"><img src="../images/prev.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="../images/next.svg"></button>',
-        cssEase: 'linear'
+        cssEase: 'linear',
+        responsive: [
+            {
+              breakpoint: 640,
+              settings: {
+                arrows: false,
+                autoplaySpeed: 2000,
+              }
+            }
+          ]
     });
 
     // slider in review
@@ -124,13 +139,13 @@ $(document).ready(function(){
 
 
     // scrollspy script
-    var spy = new Gumshoe('#top-menu a', {
+    var spy = new Gumshoe('#menu__list a', {
         offset: '60',
     });
 
 
     // anchor scroll 
-    $("#top-menu").on("click","a", function (event) {
+    $("#menu__list").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;

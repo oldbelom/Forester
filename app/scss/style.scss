@@ -63,7 +63,7 @@
   border: none;
   outline: none;
   z-index: 2;
-  top: 50%;
+  top: 47%;
   font-size: 0;
   width: 70px;
   height: 100px;
@@ -141,7 +141,7 @@
   }
 }
 
-#top-menu li.active {
+#menu__list li.active {
   .menu__border {
     background-color: $main-color;
     width: 100%;
@@ -171,7 +171,9 @@
     top: -70px;
   }
 }
-
+.menu__title{
+  display: none;
+}
 .menu__logo {
   z-index: 2;
   position: relative;
@@ -634,3 +636,5 @@
 }
 
 // footer end
+
+@import '../scss/media.scss';
